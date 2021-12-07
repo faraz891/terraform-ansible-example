@@ -7,7 +7,7 @@ variable "key_name" {
 }
 
 variable "tags" {
-  type = "map"
+  type = map(string) 
   default = {
     Repo = "https://github.com/startup-systems/terraform-ansible-example"
     Terraform = true
